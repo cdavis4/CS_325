@@ -41,7 +41,7 @@ Sample Input
 
 ## Author
 ---
-* **Carrie Davis** - *OSU Student ID#933615388*
+* **Carrie Davis** 
 
 ## Resources
 ---
