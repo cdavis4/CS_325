@@ -12,19 +12,19 @@ Text file must be in same folder as python script binpack.py and the text must b
 - next line contains one integer C (k -100) with k representing a # that can not be less than the largest item.
 - next line is int number N that indicates the number of items (1-100).
 - next N line(s) represent the items weight (1 - 500) corresponding to the weight of object
-`
+
 Sample Input
-3
-10
-6
-5 10 2 5 4 4
-20
-19
-9 10 2 1 7 3 3 3 3 14 6 5 2 8 6 4 6 2 6
-10
-20
-4 4 4 4 4 4 4 4 4 4 6 6 6 6 6 6 6 6 6 6
-`
+3<br />
+10<br />
+6<br />
+5 10 2 5 4 4<br />
+20<br />
+19<br />
+9 10 2 1 7 3 3 3 3 14 6 5 2 8 6 4 6 2 6<br />
+10<br />
+20<br />
+4 4 4 4 4 4 4 4 4 4 6 6 6 6 6 6 6 6 6 6<br />
+
 ## Deployment
 ----
 1) To run on flip (OSU engineering server) unzip folder on server to directory of choice.  Program(s) require at least python 2.7 which is installed on flip. Using Command line, navigate to folder containing scripts example:
