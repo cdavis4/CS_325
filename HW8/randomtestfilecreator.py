@@ -16,14 +16,17 @@ class WriteToText():
             if inChar == '\n' or inChar == '\t':
                 fileOut.write(inChar)
 
-def randomArray(size,low,high,inFile,filewrite):
+def randomArray(size,low,high,filewrite):
     i = 0
     while i < size:
         randNum = random.randint(low,high)
-        filewrite.writeLine((repr(randNum) + ' '),)
+        if i < (size-1):
+            filewrite.writeLine(str(randNum) + ' ,')
+        else:
+            filewrite.writeLine(str(randNum))
         i += 1
     filewrite.writeLine('\n')
-    
+
 def main(n):
     try:
         file = 'binRand300.txt'
@@ -31,13 +34,13 @@ def main(n):
             os.remove(file)
         wfile = WriteToText(file)
         tests = 4
-        wfile.writeLine(tests,'')
+        wfile.writeLine(tests,'\n')
         i = 0
         while i < tests:
             c = 300
-            wfile.writeLine(c)
-            wfile.writeLine(n)
-            randomArray(n,1,c,file,wfile)
+            wfile.writeLine(c,'\n')
+            wfile.writeLine(n,'\n')
+            randomArray(n,1,c,wfile)
             i +=1
     except Exception as e:
         print("fail: ",e)
