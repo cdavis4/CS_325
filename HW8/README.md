@@ -13,7 +13,7 @@ Text file must be in same folder as python script binpack.py and the text must b
 - next line is int number N that indicates the number of items (1-100).
 - next N line(s) represent the items weight (1 - 500) corresponding to the weight of object
 
-Sample Input
+Sample Input<br />
 3<br />
 10<br />
 6<br />
